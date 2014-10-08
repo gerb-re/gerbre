@@ -1,0 +1,23 @@
+{
+    "name": "gerbre/gerbre",
+    "description": "Gerb.re is a collection of handy utilities and tools for geeks.",
+    "homepage": "http://gerb.re",
+    "version": "0.0.1-alpha",
+    "type": "project",
+    "require": {
+        "slim/slim": "2.*"
+    },
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Niels de Blaauw",
+            "email": "niels.de.blaauw@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Geert Wirken",
+            "email": "geert@gwirken.nl",
+            "role": "Developer"
+        }
+    ]
+}
