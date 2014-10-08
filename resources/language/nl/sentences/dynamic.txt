@@ -1,0 +1,2 @@
+Je bent zelf een %s.
+Zag je me %s?!
