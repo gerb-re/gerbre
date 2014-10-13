@@ -2,6 +2,8 @@
 require '../vendor/autoload.php';
 require '../includes/autoloader.inc.php';
 
+error_reporting(E_ALL);
+
 $app = new \Slim\Slim(array(
 	'debug' => true
 ));
@@ -72,8 +74,8 @@ $app->group('/gerbsverbs', function () use ($app) {
 		$app = \Slim\Slim::getInstance();
 		$app->response->headers->set('Content-Type', 'application/json');
 
-		// TODO: construct sentence
-		$word = "TODO noun ($language)";
+		$provider = new \Gerbre\Word\NounProvider($language);
+		$word = $provider->giveRandomWord();
 		echo json_encode(array($word));
 	});
 
@@ -85,8 +87,8 @@ $app->group('/gerbsverbs', function () use ($app) {
 		$app = \Slim\Slim::getInstance();
 		$app->response->headers->set('Content-Type', 'application/json');
 
-		// TODO: construct sentence
-		$word = "TODO verb ($language)";
+		$provider = new \Gerbre\Word\VerbProvider($language);
+		$word = $provider->giveRandomWord();
 		echo json_encode(array($word));
 	});
 });
