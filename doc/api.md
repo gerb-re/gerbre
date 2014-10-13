@@ -13,6 +13,9 @@ The **gerbsverbs** part of the API provides access to all API methods responsibl
 * `/api/gerbsverbs/sentence` - redirects to `/api/gerbsverbs/sentence/nl`
 * `/api/gerbsverbs/sentence/<language>` - generate one single sentence for the given *language* code.
 * `/api/gerbsverbs/sentence/<language>/<number>` - generate an arbitrary *number* of sentences for the given *language* code.
+
+### Word provider
+
 * `/api/gerbsverbs/word` - redirects to `/api/gerbsverbs/word/nl`
 * `/api/gerbsverbs/word/<language>` - return a random word from the given *language* code.
 * `/api/gerbsverbs/word/<language>/noun` - return a random noun from the given *language* code.
