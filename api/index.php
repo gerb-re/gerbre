@@ -23,7 +23,8 @@ $app->group('/gerbsverbs', function () use ($app) {
 		$app = \Slim\Slim::getInstance();
 		$app->response->headers->set('Content-Type', 'application/json');
 
-		$sentence = \Gerbre\Sentence\StaticSentenceProvider::giveRandomSentence();
+		$sentenceProvider = new \Gerbre\Sentence\StaticSentenceProvider();
+		$sentence = $sentenceProvider->giveRandomSentence();
 		echo json_encode(array($sentence));
 	});
 
@@ -35,13 +36,8 @@ $app->group('/gerbsverbs', function () use ($app) {
 		$app = \Slim\Slim::getInstance();
 		$app->response->headers->set('Content-Type', 'application/json');
 
-		// Construct multiple sentences
-		$sentences = [];
-
-		for ($i = 0; $i < intval($number); $i++) {
-			// TODO: construct sentence
-			$sentences[] = "TODO ($language) $i";
-		}
+		$sentenceProvider = new \Gerbre\Sentence\StaticSentenceProvider();
+		$sentences = $sentenceProvider->giveRandomSentences(intval($number));
 
 		// Return generated sentences
 		echo json_encode($sentences);
