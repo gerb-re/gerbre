@@ -1,5 +1,6 @@
 <?php
 require '../vendor/autoload.php';
+require '../includes/autoloader.inc.php';
 
 $app = new \Slim\Slim(array(
 	'debug' => true
@@ -22,8 +23,7 @@ $app->group('/gerbsverbs', function () use ($app) {
 		$app = \Slim\Slim::getInstance();
 		$app->response->headers->set('Content-Type', 'application/json');
 
-		// TODO: construct sentence
-		$sentence = "TODO ($language)";
+		$sentence = \Gerbre\Sentence\StaticSentenceProvider::giveRandomSentence();
 		echo json_encode(array($sentence));
 	});
 
