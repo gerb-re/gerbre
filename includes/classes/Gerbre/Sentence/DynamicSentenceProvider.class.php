@@ -10,6 +10,6 @@ class DynamicSentenceProvider extends AbstractSentenceProvider{
 		$sentences = $this->readResource();
 		$sentence = $sentences[array_rand($sentences)];
 		$wordProvider = new \Gerbre\Word\NounProvider('nl');
-		return sprintf($sentence, $wordProvider->giveRandomWord());
+		return ucfirst(sprintf($sentence, $wordProvider->giveRandomWord()));
 	}
 }
