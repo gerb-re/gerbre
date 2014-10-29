@@ -2,7 +2,7 @@
 body{background-color:#fff;font-family:'Ubuntu',sans-serif;font-size:1em}
 header{text-align:right;margin-bottom:25px}
 .gerbsverbs .sayButton{text-align:center;font-size:300%}
-.gerbsverbs .sayingContainer{width:575px;height:250px;padding:50px 75px 100px 75px;background:url("../images/balloon.svg") no-repeat;margin-left:auto;margin-right:auto}.gerbsverbs .sayingContainer .saying{text-align:center;font-family:'Schoolbell',cursive;font-size:275%;width:575px;height:250px;display:table-cell;vertical-align:middle}
+.gerbsverbs .sayingContainer{margin-top:50px;width:575px;height:250px;padding:50px 75px 100px 75px;background:url("../images/balloon.svg") no-repeat;margin-left:auto;margin-right:auto}.gerbsverbs .sayingContainer .saying{text-align:center;font-family:'Schoolbell',cursive;font-size:275%;width:575px;height:250px;display:table-cell;vertical-align:middle}
 footer{margin-top:25px;border-top:1px solid #999;padding-top:15px;font-size:80%;color:#999;text-align:center}
 a{color:#008ee8;text-decoration:none}a:hover{color:#e80000}
 img{border:0}

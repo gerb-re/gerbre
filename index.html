@@ -17,7 +17,7 @@
 
 		<div class="gerbsverbs">
 			<div class="sayButton">
-				<a href="#" id="sayButton" onclick="sayIt(); return false">
+				<a href="#" id="sayButton" onclick="sayIt(); this.blur(); return false">
 					Say something!
 				</a>
 			</div>
@@ -33,8 +33,11 @@
 			function sayIt(){
 				$.getJSON('/api/gerbsverbs/sentence/nl', function(data){
 					$('.saying').text(data[0]);
+					$('.sayingContainer').show();
 				});
 			};
+
+			$('.sayingContainer').hide();
 		</script>
 
 		<footer>
