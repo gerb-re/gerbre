@@ -25,7 +25,7 @@ $app->group('/gerbsverbs', function () use ($app) {
 		$app = \Slim\Slim::getInstance();
 		$app->response->headers->set('Content-Type', 'application/json');
 
-		$sentenceProvider = new \Gerbre\Sentence\StaticSentenceProvider();
+		$sentenceProvider = new \Gerbre\Sentence\AnySentenceProvider();
 		$sentence = $sentenceProvider->giveRandomSentence();
 		echo json_encode(array($sentence));
 	});
