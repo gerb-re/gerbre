@@ -1,0 +1,44 @@
+@gerbreBlue: #008ee8;
+@gerbreRed: #e80000;
+@gerbreGray: #999;
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
+
+body {
+	background-color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em;
+}
+
+header {
+	text-align: right;
+	margin-bottom: 25px;
+}
+
+.gerbsverbs {
+	.sayButton {
+		text-align: center;
+		font-size: 300%;
+	}
+}
+
+footer {
+	margin-top: 25px;
+	border-top: 1px solid @gerbreGray;
+	padding-top: 15px;
+	font-size: 80%;
+	color: @gerbreGray;
+	text-align: center;
+}
+
+a {
+	color: @gerbreBlue;
+	text-decoration: none;
+	&:hover {
+		color: @gerbreRed;
+	}
+}
+
+img {
+	border: 0;
+}
