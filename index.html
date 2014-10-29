@@ -27,6 +27,14 @@
 			</div>			
 		</div>
 
+		<script type="text/javascript">
+			function sayIt(){
+				$.getJSON('/api/gerbsverbs/sentence/nl', function(data){
+					$('.saying').text(data[0]);
+				});
+			};
+		</script>
+
 		<footer>
 			Made with love by the Gerb.re team
 			&bull;
