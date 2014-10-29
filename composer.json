@@ -5,7 +5,8 @@
     "version": "0.0.1-alpha",
     "type": "project",
     "require": {
-        "slim/slim": "2.*"
+        "slim/slim": "2.*",
+        "yiisoft/jquery": "2.*"
     },
     "license": "GPL-3.0",
     "authors": [
